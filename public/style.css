@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #7a8bd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+/* Input Section */
+.todo-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F3F3F3;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.todo-input input {
+    flex: 1;
+    border: 2px solid black;
+    padding: 8px;
+    background: none;
+    outline: none;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.todo-input button {
+    background: #3E78B2;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.todo-input button:hover {
+    background: #315E8E;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F3F3F3;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+}
+
+.task.completed label {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task label {
+    flex: 1;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Buttons */
+.task-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    padding: 4px;
+}
+
+.task-buttons .edit {
+    color: #3E78B2;
+}
+
+.task-buttons .delete {
+    color: #E53935;
+}
+
+.task-buttons .edit:hover {
+    color: #315E8E;
+}
+
+.task-buttons .delete:hover {
+    color: #C62828;
+}

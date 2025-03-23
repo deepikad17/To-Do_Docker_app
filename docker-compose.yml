@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  todo-app:
+    image: todo-app
+    build: .
+    ports:
+      - "8080:80"  # Changed from 3000 to 8080 to avoid port conflicts
+    container_name: my-todo-container
+    restart: always
